@@ -9,7 +9,19 @@ import SwiftUI
 
 struct LabelUIView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Text("Hello, World!")
+            Label(LocalizedStringKey("Hello"), systemImage: "figure.wave")
+            Label(LocalizedStringKey("Hello"), systemImage: "figure.wave")
+            Label(
+                title: {Text("Hello")},
+                icon: { Image("logo_swift")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 20, height: 20)
+                }
+            )
+        }
     }
 }
 

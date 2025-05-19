@@ -9,7 +9,19 @@ import SwiftUI
 
 struct ImageUIView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Image("logo_swift")
+            Image("logo_swift")
+            Image(systemName: "figure.walk")
+                .resizable()
+                .scaledToFit()
+                .frame(width: 80, height: 40)
+            Image("swift_png")
+                .resizable()
+                .scaledToFit()
+                .scaledToFill()
+                .frame(width: 100, height: 200)
+        }
     }
 }
 

@@ -9,10 +9,37 @@ import SwiftUI
 
 struct ButtonUIView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack{
+            Button(LocalizedStringKey("Button")) {
+                print("Hola mundo")
+            }
+            Button(action:{print("Hola mundo")}) {
+                Text("Hola Mundo 2")
+                    .frame(width: 140,height:  50)
+                    .background(Color.blue)
+                    .foregroundStyle(Color.white)
+                    .cornerRadius(8)
+            }
+        }
+    }
+}
+
+struct Counter:View {
+    @State var total = 0
+    var body: some View {
+        Button(action:{
+            total += 1
+        }) {
+            Text("Comentarios:  \(total)")
+                .frame(height:  50)
+                .background(Color.blue)
+                
+                .foregroundStyle(Color.white)
+                .cornerRadius(8)
+        }
     }
 }
 
 #Preview {
-    ButtonUIView()
+    Counter()
 }

@@ -38,3 +38,12 @@ struct ContentView: View {
 
 // Para los componenetes ->shit + command + l /simbolo +
 //refactor de code-> command +a -> control + i
+//mover linea -> option + command + []
+//mover entre ficheros -> commnad + shift + []
+// poner teclado en simulador -> command + shift + k
+
+//shift + command + l ->more
+// ⌥ ⌘ E ->to select next occurence of currently selected
+// ⌥ ⇧ ⌘ E ->to select previous occurence of currently selected
+// ⌥ ⌘ G ->to find and select next
+// ⌥ ⇧ ⌘ G ->to find and select previous
