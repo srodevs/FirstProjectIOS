@@ -10,7 +10,7 @@ import SwiftUI
 struct MenuUIView: View {
     var body: some View {
         NavigationStack{
-            VStack{
+            List{
                 NavigationLink(destination: ButtonUIView()){
                     Text("Button View")
                 }
@@ -32,7 +32,9 @@ struct MenuUIView: View {
                 NavigationLink(destination: ImcUIView()){
                     Text("IMC Calculator")
                 }
-                Text("App 1")
+                NavigationLink(destination: ListUIView()){
+                    Text("Listas")
+                }
                 Text("App 2")
                 Text("App 3")
             }
