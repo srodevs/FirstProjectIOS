@@ -8,8 +8,13 @@
 import SwiftUI
 
 struct SuperHeroSearchUIView: View {
+    @State var  superHeroName: String = ""
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack{
+            TextField("Search SuperHero", text: $superHeroName)
+                .padding().foregroundStyle(.cyan)
+        }.frame(minWidth: .infinity, maxWidth: .infinity)
     }
 }
 
