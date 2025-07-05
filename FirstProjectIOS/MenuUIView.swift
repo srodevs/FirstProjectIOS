@@ -44,6 +44,9 @@ struct MenuUIView: View {
                     NavigationLink(destination: SuperHeroSearchUIView()) {
                         Text("SuperHero")
                     }
+                    NavigationLink(destination: MapFavUIView()) {
+                        Text("Favorites places")
+                    }
                 }
                 
             }
