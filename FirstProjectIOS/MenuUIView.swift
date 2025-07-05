@@ -11,34 +11,41 @@ struct MenuUIView: View {
     var body: some View {
         NavigationStack{
             List{
-                NavigationLink(destination: ButtonUIView()){
-                    Text("Button View")
+                Section("Componentes"){
+                    NavigationLink(destination: ButtonUIView()){
+                        Text("Button View")
+                    }
+                    NavigationLink(destination: ContentView()){
+                        Text("Content View")
+                    }
+                    NavigationLink(destination: ImageUIView()){
+                        Text("Image View")
+                    }
+                    NavigationLink(destination: LabelUIView()){
+                        Text("Label View")
+                    }
+                    NavigationLink(destination: TextFieldUIView()){
+                        Text("TextField View")
+                    }
+                    NavigationLink(destination: TextUIView()){
+                        Text("Text View")
+                    }
+                    NavigationLink(destination: ListUIView()){
+                        Text("Listas")
+                    }
+                    NavigationLink(destination: MapsUIView()){
+                        Text("Maps")
+                    }
                 }
-                NavigationLink(destination: ContentView()){
-                    Text("Content View")
+                Section("Apps"){
+                    NavigationLink(destination: ImcUIView()){
+                        Text("IMC Calculator")
+                    }
+                    NavigationLink(destination: SuperHeroSearchUIView()) {
+                        Text("SuperHero")
+                    }
                 }
-                NavigationLink(destination: ImageUIView()){
-                    Text("Image View")
-                }
-                NavigationLink(destination: LabelUIView()){
-                    Text("Label View")
-                }
-                NavigationLink(destination: TextFieldUIView()){
-                    Text("TextField View")
-                }
-                NavigationLink(destination: TextUIView()){
-                    Text("Text View")
-                }
-                NavigationLink(destination: ImcUIView()){
-                    Text("IMC Calculator")
-                }
-                NavigationLink(destination: ListUIView()){
-                    Text("Listas")
-                }
-                NavigationLink(destination: SuperHeroSearchUIView()) {
-                    Text("SuperHero")
-                }
-                Text("App 3")
+                
             }
         }
     }

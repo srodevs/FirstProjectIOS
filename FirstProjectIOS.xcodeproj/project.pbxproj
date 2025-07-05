@@ -30,11 +30,6 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		812FC68F2DD555290015AA7F /* FirstProjectIOS */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = FirstProjectIOS;
-			sourceTree = "<group>";
-		};
 		812FC6A02DD5552A0015AA7F /* FirstProjectIOSTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = FirstProjectIOSTests;
@@ -43,6 +38,11 @@
 		812FC6AA2DD5552A0015AA7F /* FirstProjectIOSUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = FirstProjectIOSUITests;
+			sourceTree = "<group>";
+		};
+		8157CA932E18F57700C2B73B /* FirstProjectIOS */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = FirstProjectIOS;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -75,7 +75,7 @@
 		812FC6842DD555280015AA7F = {
 			isa = PBXGroup;
 			children = (
-				812FC68F2DD555290015AA7F /* FirstProjectIOS */,
+				8157CA932E18F57700C2B73B /* FirstProjectIOS */,
 				812FC6A02DD5552A0015AA7F /* FirstProjectIOSTests */,
 				812FC6AA2DD5552A0015AA7F /* FirstProjectIOSUITests */,
 				812FC68E2DD555290015AA7F /* Products */,
@@ -108,7 +108,7 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				812FC68F2DD555290015AA7F /* FirstProjectIOS */,
+				8157CA932E18F57700C2B73B /* FirstProjectIOS */,
 			);
 			name = FirstProjectIOS;
 			packageProductDependencies = (
