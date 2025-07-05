@@ -54,7 +54,7 @@ struct GenderTop:View {
     var body: some View {
         
         let colorSate = if(valueGender == stateSelected){
-            Color.grayUnselected
+            Color.green
         }else{
             Color.graySelection
         }
@@ -88,8 +88,8 @@ struct SliderHeight: View {
     
     var body: some View {
         VStack{
-            Text("Altura").padding(.top, 12)
-            TitleText(nameTitle: "\(Int(selectedHeight)) cm")
+            Text("Altura").padding(.top, 12).foregroundColor(.blue)
+            TitleText(nameTitle: "\(Int(selectedHeight)) cm").foregroundColor(.blue)
             Slider(value: $selectedHeight, in: 100...200, step: 1)
                 .padding(.bottom, 12)
                 .padding(.horizontal, 12)
@@ -105,8 +105,8 @@ struct BtnAgeHeight: View {
     
     var body: some View {
         VStack {
-            Text(titleAgeHeight).padding(.top, 12)
-            TitleText(nameTitle: "\(valueAgeHeight)").padding(.vertical, 8)
+            Text(titleAgeHeight).padding(.top, 12).foregroundColor(.blue)
+            TitleText(nameTitle: "\(valueAgeHeight)").padding(.vertical, 8).foregroundColor(.blue)
             HStack{
                 Button(action: {
                     if(valueAgeHeight > 0){
